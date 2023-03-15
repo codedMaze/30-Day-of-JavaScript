@@ -37,3 +37,55 @@
 // 10
 // console.log(findMax(0, -10, -2))
 // 0
+
+// Question
+
+// Declare a function fullName and it print out your full name.
+let fullName = () => {
+  console.log("firstName lastName");
+};
+
+// Declare a function fullName and now it takes firstName, lastName as a parameter and it returns your full - name.
+fullName = (firstName, lastName) => {
+  console.log(firstName, lastName);
+};
+
+// Declare a function addNumbers and it takes two two parameters and it returns sum.
+let addNumber = (a, b) => {
+  return a + b;
+};
+
+// An area of a rectangle is calculated as follows: area = length x width. Write a function which calculates areaOfRectangle.
+const areaOfRectangle = (length, width) => {
+  return length * width;
+};
+
+// A perimeter of a rectangle is calculated as follows: perimeter= 2x(length + width). Write a function which calculates perimeterOfRectangle.
+const perimeterOfRectangle = (length, width) => {
+  return 2 * (length * width);
+};
+
+// A volume of a rectangular prism is calculated as follows: volume = length x width x height. Write a function which calculates volumeOfRectPrism.
+const volumeOfRectPrism = (length, width, height) => {
+  return length * width * height;
+};
+
+// Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+const areaOfCircle = (r) => {
+  return 3.14 * r * r;
+};
+
+// Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
+const circumOfCircle = (r) => {
+  return 2 * 3.14 * r;
+};
+
+// Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
+const density = (mass, volume) => {
+  return mass / volume;
+};
+
+// Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
+const speedOfMovingObject = (distance, time) => {
+  return distance / time;
+};
