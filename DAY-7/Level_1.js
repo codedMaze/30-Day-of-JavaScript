@@ -89,3 +89,61 @@ const density = (mass, volume) => {
 const speedOfMovingObject = (distance, time) => {
   return distance / time;
 };
+
+// Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
+const weight = (mass, gravity) => {
+  return mass * gravity;
+};
+
+// Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+const convertCelsiusToFahrenheit = (celsius) => {
+  return celsius * (9 / 5) + 32;
+};
+
+// Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
+const bodyMassIndex = (weightKG, height) => {
+  const bmi = weightKG / (height * height);
+  if (bmi < 18.5) {
+    console.log("Underweight: Your BMI (" + bmi + ") is less than 18.5");
+  } else if (bmi >= 18.5 && bmi <= 24.9) {
+    console.log(
+      "Normal weight: Your BMI (" + bmi + ") is between 18.5 and 24.9"
+    );
+  } else if (bmi >= 25 && bmi <= 29.9) {
+    console.log("Overweight: Your BMI (" + bmi + ") is between 25 and 29.9");
+  } else {
+    console.log("Obese: Your BMI (" + bmi + ") is 30 or above");
+  }
+  return bmi;
+};
+
+// Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+const checkSeason = (month) => {
+  if (month === "December" || month === "January" || month === "February") {
+    console.log("The season is Winter");
+  } else if (month === "March" || month === "April" || month === "May") {
+    console.log("The season is Spring");
+  } else if (month === "June" || month === "July" || month === "August") {
+    console.log("The season is Summer");
+  } else if (
+    month === "September" ||
+    month === "October" ||
+    month === "November"
+  ) {
+    console.log("The season is Autumn");
+  } else {
+    console.log("Month is invalid");
+  }
+  return month;
+};
+
+// Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+const findMax = (a, b, c) => {
+  if (a > b && a > c) {
+    console.log(a);
+  } else if (b > a && b > c) {
+    console.log(b);
+  } else {
+    console.log(c);
+  }
+};
